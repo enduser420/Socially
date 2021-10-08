@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_5dp"
+    android:layout_marginTop="@dimen/_5dp"
+    android:layout_marginEnd="@dimen/_5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_16dp">
+
+        <ImageView
+            android:id="@+id/userImage"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <ImageView
+            android:id="@+id/postImage"
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_below="@id/postOptns"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/_5dp"
+            android:layout_marginTop="@dimen/_5dp"
+            android:clickable="false"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12dp"
+            android:layout_marginEnd="@dimen/_12dp"
+            android:layout_toStartOf="@id/postOptns"
+            android:layout_toEndOf="@+id/userImage"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/tmp_display_name"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/createdAt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userName"
+            android:layout_marginStart="@dimen/_12dp"
+            android:layout_marginTop="@dimen/_5dp"
+            android:layout_toStartOf="@id/postImage"
+            android:layout_toEndOf="@id/userImage"
+            android:maxLines="1"
+            android:text="@string/tmp_created_at"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/postText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/createdAt"
+            android:layout_marginTop="@dimen/_12dp"
+            android:layout_toStartOf="@id/postImage"
+            android:text="@string/tmp_post_text"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/likeButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/postText"
+            android:layout_marginTop="@dimen/_16dp" />
+
+        <TextView
+            android:id="@+id/likeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/postText"
+            android:layout_marginStart="@dimen/_5dp"
+            android:layout_marginTop="@dimen/_21dp"
+            android:layout_toEndOf="@id/likeButton"
+            android:text="@string/tmp_99" />
+
+        <ImageView
+            android:id="@+id/dislikeButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/postText"
+            android:layout_marginStart="@dimen/_5dp"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_toEndOf="@id/likeCount"
+            android:rotationY="180" />
+
+        <TextView
+            android:id="@+id/dislikeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/postText"
+            android:layout_marginStart="@dimen/_5dp"
+            android:layout_marginTop="@dimen/_21dp"
+            android:layout_toEndOf="@id/dislikeButton"
+            android:text="@string/tmp_99" />
+
+        <ImageView
+            android:id="@+id/commentButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/postText"
+            android:layout_marginStart="@dimen/_5dp"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_toEndOf="@id/dislikeCount"
+            android:src="@drawable/ic_baseline_comment" />
+
+        <TextView
+            android:id="@+id/commentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/postText"
+            android:layout_marginStart="@dimen/_5dp"
+            android:layout_marginTop="@dimen/_21dp"
+            android:layout_toEndOf="@id/commentButton"
+            android:text="@string/tmp_99"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/postOptns"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:clickable="false"
+            android:src="@drawable/ic_baseline_more"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

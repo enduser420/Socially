@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Socially</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="signup">SignUp</string>
+    <string name="display_name">Display Name</string>
+    <string name="post">Post</string>
+    <string name="options">⋮</string>
+    <string name="create_a_post">Create a Post</string>
+    <string name="tmp_display_name">Display Name</string>
+    <string name="tmp_created_at">created At</string>
+    <string name="tmp_post_text">Post Text</string>
+    <string name="tmp_99">99</string>
+    <string name="close">Close</string>
+    <string name="open">Open</string>
+    <string name="confirm_password">Enter Password again</string>
+    <string name="comment_text">Comment Text</string>
+    <string name="edit_post">Edit Post</string>
+    <string name="edit_comment">Edit Comment</string>
+</resources>

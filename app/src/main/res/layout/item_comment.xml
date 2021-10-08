@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_5dp"
+    android:layout_marginTop="@dimen/_5dp"
+    android:layout_marginEnd="@dimen/_5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_16dp">
+
+        <ImageView
+            android:id="@+id/comment_userImage"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/comment_userName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12dp"
+            android:layout_marginEnd="@dimen/_12dp"
+            android:layout_toStartOf="@id/commentOptions"
+            android:layout_toEndOf="@+id/comment_userImage"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/tmp_display_name"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/comment_createdAt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/comment_userName"
+            android:layout_marginStart="@dimen/_12dp"
+            android:layout_marginTop="@dimen/_5dp"
+            android:layout_toEndOf="@id/comment_userImage"
+            android:maxLines="1"
+            android:text="@string/tmp_created_at"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/commentText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comment_createdAt"
+            android:layout_marginTop="@dimen/_12dp"
+            android:text="@string/comment_text"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/comment_likeButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/commentText"
+            android:layout_marginTop="@dimen/_16dp" />
+
+        <TextView
+            android:id="@+id/comment_likeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/commentText"
+            android:layout_marginStart="@dimen/_5dp"
+            android:layout_marginTop="@dimen/_21dp"
+            android:layout_toEndOf="@id/comment_likeButton"
+            android:text="@string/tmp_99" />
+
+        <ImageView
+            android:id="@+id/comment_dislikeButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/commentText"
+            android:layout_marginStart="@dimen/_5dp"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_5dp"
+            android:layout_toEndOf="@id/comment_likeCount" />
+
+        <TextView
+            android:id="@+id/comment_dislikeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/commentText"
+            android:layout_marginStart="@dimen/_5dp"
+            android:layout_marginTop="@dimen/_21dp"
+            android:layout_toEndOf="@id/comment_dislikeButton"
+            android:text="@string/tmp_99" />
+
+        <ImageView
+            android:id="@+id/commentOptions"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:src="@drawable/ic_baseline_more"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

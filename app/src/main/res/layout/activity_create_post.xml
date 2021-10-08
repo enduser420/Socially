@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_16dp"
+    tools:context=".activities.CreatePostActivity">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/postInput"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="@dimen/_5dp"
+        android:layout_marginTop="@dimen/_5dp"
+        android:layout_marginEnd="@dimen/_5dp"
+        android:layout_marginBottom="@dimen/_5dp"
+        android:background="@drawable/edittext_round_shape"
+        android:gravity="top"
+        android:hint="Share something ..."
+        android:padding="@dimen/_12dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/postBtn"
+        android:layout_below="@id/postInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5dp"
+        android:background="@drawable/edittext_round_shape"
+        android:text="@string/post" />
+
+    <ImageView
+        android:id="@+id/postImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/postBtn"
+        android:layout_margin="@dimen/_5dp"
+        android:src="@drawable/ic_baseline_add"/>
+
+</RelativeLayout>

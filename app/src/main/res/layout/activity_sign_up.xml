@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="@dimen/_16dp"
+    android:orientation="vertical"
+    tools:context=".activities.SignUpActivity">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/SignUpNametxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:hint="@string/display_name"
+        android:layout_margin="@dimen/_5dp"
+        android:inputType="textPersonName" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/SignUpEmailtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:layout_margin="@dimen/_5dp"
+        android:inputType="textPersonName" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/SignUpPasswordtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:layout_margin="@dimen/_5dp"
+        android:inputType="textPassword" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/ConfirmSignUpPasswordtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirm_password"
+        android:layout_margin="@dimen/_5dp"
+        android:inputType="textPassword" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/SignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5dp"
+        android:text="@string/signup" />
+
+</LinearLayout>
